@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*.outfit-<uniquifier> {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}*/
+
+body {
+    margin: 50px 150px 50px 150px ;
+    padding: 0;
+    background-color: #160033;
+    color: rgb(238, 227, 227);
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.little-title {
+    font-size: 15px;
+    color: #894bdb;
+}
+
+.section-title {
+    font-size: 28px;
+}
+
+/*---------------------------------------------- Header ------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30px;
+    background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+/*-------------------------------------------- Section Home ------------------------------------------------*/
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12%;
+    height: 80vh;
+}
+
+.box-home {
+    width: 50%;
+}
+
+h4 {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-size: 40px;
+    padding: 0;
+    margin: 30px 0px 30px 0px;
+    width: 60%;
+    color: #894bdb;
+}
+
+.home-title {
+    width: 52%;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.home-media {
+    font-size: 15px;
+}
+
+#btn-cv {
+    width: 290px;
+    height: 60px;
+    font-size: 25px;
+    background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+    color: white;
+    border-radius: 30px;
+    margin: 50px 0px 50px 0px;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 0.1em;
+}
+
+/*-------------------------------------------- About Me ------------------------------------------------*/
+.who-am-i {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgs-about {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.img-left {
+    margin: 50px 100px 50px 100px;
+}
+
+.img-right {
+    margin: 50px 200px 50px 200px;  
+}
+
+.box-about {
+    width: 50%;
+}
+
+.section-text {
+    margin-top: 40px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.section-footer {
+    display: flex;
+}
+
+.item-footer {
+    margin: 40px 50px 50px 0px;
+    font-size: 13px;
+}
+
+.academic-formations {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.box-formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.formation-title-place {
+    color: #894bdb;
+}
