@@ -5,21 +5,25 @@
         <meta name="author" content="Ingrid">
         <title>ICR | Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shortcut icon" type="imagex/png" href="imgs/icon-linkedin.png">
     </head>
 
     <body>
-        <header>
+        <header id="top">
             <h2>ICR | Portfolio</h2>
             <nav>
-                <h3>Home</h3>
-                <h3>About Me</h3>
-                <h3>My Skills</h3>
-                <h3>Contact</h3>
+                <a href="#home"><h3>Home</h3></a>
+                <a href="#about-me"><h3>About Me</h3></a>
+                <a href="#my-skills"><h3>My Skills</h3></a>
+                <a href="#contact"><h3>Contact</h3></a>
             </nav>
         </header>
 
         <main>
-            <section class="home">
+
+            <a href="#top"><input type="button" name="btn-cv" id="btn-back" value="^"></a>
+
+            <section id="home">
                 <div class="box-home">
                     <h4>Hello, I am</h4>
                     <h5>Ingrid Cristine Rocha</h5>
@@ -34,10 +38,10 @@
                     </div>
                 </div>
 
-                <img src="imgs/foto.png" alt="Foto de perfil">
+                <img src="imgs/perfil.png" alt="Foto de perfil" class="perfil">
             </section>
 
-            <section class="about-me">
+            <section id="about-me">
                 <div class="who-am-i">
                     <div class="imgs-about">
                         <img src="imgs/bosch.jpeg" alt="Imagem" class="img-left">
@@ -74,17 +78,17 @@
                     <p class="section-title">ACADEMIC FORMATIONS</p>
                     <div class="container-formations">
                         <div class="box-formation">
-                            <div class="circle"><img src="imgs/icon-ceep.jpg" alt=""></div>
+                            <div class="circle"><img src="imgs/icon-ceep.jpeg" alt="Ícone CEEP"></div>
                             <p class="formation-title">Technical High School in Eletromechanics | <a class="formation-title-place">CEEP</a></p>
                             <p class="formation-year">2020 - 2023</p>
                         </div>
                         <div class="box-formation">
-                            <div class="circle"><img src="imgs/icon-ufpr" alt=""></div>
+                            <div class="circle"><img src="imgs/icon-ufpr.webp" alt="Ícone UFPR"></div>
                             <p class="formation-title">University Degree in Systems Analisys and Development | <a class="formation-title-place">UFPR</a></p>
                             <p class="formation-year">2024 - 2026</p>
                         </div>
                         <div class="box-formation">
-                            <div class="circle"><img src="imgs/icon-senai" alt=""></div>
+                            <div class="circle"><img src="imgs/icon-senai.webp" alt="Ícone SENAI"></div>
                             <p class="formation-title">Technical Course in Systems Development | <a class="formation-title-place">SENAI</a></p>
                             <p class="formation-year">2024 - 2025</p>
                         </div>
@@ -97,20 +101,33 @@
                         <img src="" alt="">
                     </div>
                     <div class="experience-description">
-                        <div class="box-experience box-experience-left">
-                            <p class="experience-title">ASSISTENT</p>
-                            <p class="experience-text">Salão de Festas</p>
-                            <p class="experience-year">2018 - 2019</p>
+                        <div class="column-left">
+                            <div class="box-experience box-experience-left">
+                                <p class="experience-title">ASSISTENT</p>
+                                <p class="experience-text">Salão de Festas</p>
+                                <p class="experience-year">2018 - 2019</p>
+                            </div>
+                            <div class="box-experience box-experience-left2">
+                                <p class="experience-title">APPRENTICE</p>
+                                <p class="experience-text">Robert Bosch</p>
+                                <p class="experience-year">2024 - now</p>
+                            </div>
                         </div>
+
+                        <div class="middle">
+                            <div class="lines">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                            <div class="column"></div>
+                            <div class="line2"></div>
+                        </div>
+
+
                         <div class="box-experience box-experience-right">
                             <p class="experience-title">MACHINE OPERATOR</p>
                             <p class="experience-text">Empresa Metalúrgica</p>
                             <p class="experience-year">2022 - 2023</p>
-                        </div>
-                        <div class="box-experience box-experience-left">
-                            <p class="experience-title">APPRENTICE</p>
-                            <p class="experience-text">Robert Bosch</p>
-                            <p class="experience-year">2024 - now</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +149,7 @@
                 </div>
             </section>
 
-            <section class="my-skills">
+            <section id="my-skills">
                 <p class="little-title">My Skills</p>
                 <p class="section-title">HARD SKILLS</p>
                 <div class="hard-skills">
@@ -275,7 +292,7 @@
 
         <footer>
             <p class="section-title">CONTACT</p>
-            <section class="contact">
+            <section id="contact">
                 <div class="box-contacts">
                     <div class="contact-title">
                         <p class="contact-text">E-mail</p>
@@ -291,9 +308,9 @@
                 </div>
             </section>
 
-            <section class="language">
+            <!-- <section class="language">
                 <input type="button" name="btn-language" id="Botao" value="Language"> 
-            </section>
+            </section> -->
 
             <section class="copyright">
                 <p class="copyright-text">Copyright © 2024 INGRID CRISTINE ROCHA.</p> 

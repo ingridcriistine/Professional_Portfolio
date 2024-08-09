@@ -7,6 +7,10 @@
     font-style: normal;
 }*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0;
@@ -34,6 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 h2 {
@@ -51,8 +56,13 @@ nav {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(243, 235, 235);
+}
+
 /*-------------------------------------------- Section Home ------------------------------------------------*/
-.home {
+#home {
     display: flex;
     justify-content: space-between;
     margin-top: 12%;
@@ -61,6 +71,27 @@ nav {
 
 .box-home {
     width: 50%;
+}
+
+#btn-back {
+    position: fixed;
+    left: 96%;
+    top: 90%;
+    width: 40px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-top: 10px;
+    background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
+    color: rgb(224, 224, 224);
+}
+
+.perfil {
+    width: 400px;
+    height: 68%;
+    border-radius: 50%;
+    background-color: #722cc2;
+    margin-right: 50px;
 }
 
 h4 {
@@ -107,7 +138,7 @@ h5 {
 }
 
 /*-------------------------------------------- About Me ------------------------------------------------*/
-.about-me {
+#about-me {
     margin-top: 130px;
 }
 
@@ -123,11 +154,15 @@ h5 {
 }
 
 .img-left {
-    margin: 50px 100px 50px 100px;
+    margin: 0px 200px 0px 100px;
+    width: 25%;
+    border-radius: 100%;
 }
 
 .img-right {
-    margin: 50px 200px 50px 200px;  
+    margin: 0px 200px 0px 300px;  
+    width: 25%;
+    border-radius: 100%;
 }
 
 .box-about {
@@ -171,6 +206,12 @@ h5 {
     width: 60%;
 }
 
+.box-formation img {
+    width: 80%;
+    border-radius: 100%;
+    padding: 10%;
+}
+
 .formation-title {
     width: 80%;
     text-align: center;
@@ -187,7 +228,7 @@ h5 {
 }
 
 .circle {
-    background-color: #007FC6;
+    background-color: #5c00c6;
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -203,6 +244,15 @@ h5 {
 
 .experience-description {
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .box-experience {
@@ -212,17 +262,53 @@ h5 {
     justify-content: center;
     width: 350px;
     height: 170px;
-    background-color: #007FC6;
+    background-color: #6722a7;
     margin: 50px;
     border-radius: 10px;
 }
 
 .box-experience-right {
-    margin: 50px 0px 50px 500px;
+    margin: 200px 0px 50px 30px;
 }
 
 .box-experience-left {
-    margin: 50px 500px 50px 0px;
+    margin: 50px 30px 50px 0px;
+} 
+
+.box-experience-left2 {
+    margin: 150px 30px 50px 0px;
+} 
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lines {
+    margin-top: 80px;
+}
+
+.lines .line1, .lines .line2, .line2 {
+    width: 150px;
+    height: 5px;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.line2 {
+    margin-top: 280px;
+}
+
+.lines .line2 {
+    margin-top: 370px;
+}
+
+.column {
+    width: 5px;
+    height: 380px;
+    background-color: #ffffff;
+    margin-top: 130px;
 }
 
 .experience-title {
@@ -244,6 +330,8 @@ h5 {
     align-items: center;
     justify-content: center;
     margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .box-curiosity {
@@ -274,7 +362,7 @@ h5 {
 }
 
 /*-------------------------------------------- My Skills ------------------------------------------------*/
-.my-skills {
+#my-skills {
     margin-top: 130px;
     display: flex;
     justify-content: center;
@@ -293,12 +381,14 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    width: 30%;
 }
 
 .hard-skill-conteiner {
     width: 300px;
     height: 50px;
-    background-color: #007FC6;
+    background-color: #5c1397; 
     border-radius: 10px;
     margin: 5px 10px 40px 0px;
     display: flex;
@@ -323,7 +413,7 @@ h5 {
 .box-soft-skill {
     width: 220px;
     height: 50px;
-    background-color: #007FC6;
+    background: linear-gradient(to right,#007FC6, #4D00AF, #A907AC);
     border-radius: 10px;
     margin: 5px 10px 20px 0px;
     display: flex;
@@ -333,11 +423,12 @@ h5 {
 
 .soft-skills {
     margin-top: 130px;
+    width: 60%;
 }
 
 /*-------------------------------------------- Contact ------------------------------------------------*/
 footer {
-    background-color: #4D00AF;
+    background-color: #2a0a55;
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -345,7 +436,7 @@ footer {
     padding-top: 30px;
 }
 
-.contact {
+#contact {
     display: flex;
     flex-direction: row;
     width: 60%;
@@ -365,6 +456,7 @@ footer {
 .contact-icons img {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
 }
 
 .copyright {
@@ -375,3 +467,22 @@ footer {
     margin-top: 80px;
     line-height: 0.2em;
 }
+
+/*-------------------------------------------- Interactions------------------------------------------------*/
+h3:hover {
+    color: #894bdb;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.home-icons img:hover, .contact-icons img:hover {
+    cursor: pointer;
+}
+
+#btn-cv:hover, .circle img:hover, .box-hard-skill:hover, .hard-skill-conteiner:hover, .box-soft-skill:hover, .contact-text:hover {
+    color: #918a99;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
