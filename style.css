@@ -86,8 +86,8 @@ a {
     color: rgb(224, 224, 224);
 }
 
-.perfil {
-    width: 400px;
+.perfil img  {
+    width: 90%;
     height: 68%;
     border-radius: 50%;
     background-color: #722cc2;
