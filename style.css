@@ -426,12 +426,11 @@ h5 {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 100px;
+    width: 60%;
 }
 
 .softSkills {
     margin-top: 130px;
-    width: 80%;
-    justify-content: center;
 }
 
 .box-hard-skill {
@@ -516,8 +515,10 @@ h5 {
 }
 
 .box-project iframe {
-    width: 40%;
+    width: 38%;
     height: 210px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 10px;
 }
 
 .project-title {
